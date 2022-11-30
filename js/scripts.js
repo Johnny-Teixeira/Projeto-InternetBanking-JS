@@ -1,4 +1,4 @@
-//eu aqui
+//menu hamburguer
 function hamburguer() {
   var x = document.getElementById("myLinks");
   if (x.style.display === "block") {
@@ -9,10 +9,9 @@ function hamburguer() {
 };
 
 
-// Get the modal
+// validar login
 var modal = document.getElementById('id01');
 
-// When the user clicks anywhere outside of the modal, close it
 window.onclick = function (event) {
   if (event.target == modal) {
     modal.style.display = "none";
@@ -20,12 +19,13 @@ window.onclick = function (event) {
 };
 
 const usuarios = [
-  {nome: "Fabio", senha: "12345"},
-  {nome: "Johnny", senha: "76542"},
-  {nome: "Ana", senha: "54321"},
+  {nome: "Ana", senha: "321654"},
+  {nome: "Johnny", senha: "123456"},
+  {nome: "Beatriz", senha: "456789"},
 ];
 
 
+// validar senha
 function ValidaSenha(nome, senha) {
   let Cadastrado = [];
   let Senha = [];
@@ -52,42 +52,11 @@ function ValidaSenha(nome, senha) {
   }
 }
 
-//fim eu aqui
 
-
-
-
-// Seleção de elementos
-const menuBtn = document.querySelector("#menu");
-const closeMenuBtn = document.querySelector("#close-menu");
-const menu = document.querySelector("#mobile-navbar");
-
-const desktopLinks = document.querySelectorAll("#navbar a");
-const mobileLinks = document.querySelectorAll("#mobile-navbar a");
-const allLinks = [...desktopLinks, ...mobileLinks];
-
+//Slide do banner
 const slides = document.querySelectorAll(".banner");
 const dots = document.querySelectorAll(".dot");
 let slideIndex = 0;
-
-// Funções
-function smoothScroll(e) {
-  e.preventDefault();
-
-  const href = this.getAttribute("href");
-  const offsetTop = document.querySelector(href).offsetTop;
-
-  scroll({
-    top: offsetTop,
-    behavior: "smooth",
-  });
-
-  setTimeout(() => {
-    if (menu.classList.contains("menu-active")) {
-      menu.classList.remove("menu-active");
-    }
-  }, 500);
-}
 
 function showSlides() {
   for (let i = 0; i < slides.length; i++) {
@@ -106,17 +75,6 @@ function showSlides() {
 
   setTimeout(showSlides, 3000);
 }
-
-// Eventos
-[menuBtn, closeMenuBtn].forEach((btn) => {
-  btn.addEventListener("click", (e) => {
-    menu.classList.toggle("menu-active");
-  });
-});
-
-allLinks.forEach((link) => {
-  link.addEventListener("click", smoothScroll);
-});
 
 // Inicialização
 showSlides();

@@ -24,12 +24,13 @@
     <script src="js/scripts.js" defer></script>
   </head>
   <body>
+
     <!-- Cabeçalho e Banner -->
     <div class="mobile-container">
       <div class="topnav">
         <a href="index.html" class="active"><span><i class="bi bi-bank"></i></span> TXR Banco Digital</a>
         <div id="myLinks">
-          <a href="login.html">Login</a>
+          <a href="index.html">Página Inicial</a>
           <a href="boleto.html">Pagar Boleto</a>
           <a href="extrato.html">Extrato</a>
           <a href="emprestimo.html">Empréstimo</a>
@@ -40,31 +41,31 @@
       </div>
     </div>
 
-   
-    <div class="login-container">
+    <main>
+      <div class="login-container">
         <h1 class="login"><span><span><i id="icon-login" class="bi bi-person"></i></span>Login do cliente</h1><br>
         <p class="login-inicio">Veja suas informações de forma fácil, consulte saldo, 
-        extrato, pague boletos, consulte nossos serviços e 
-        tenha uma experiência personalizada com o TXR Internet Banking</p>
+          extrato, pague boletos, consulte nossos serviços e 
+          tenha uma experiência personalizada com o TXR Internet Banking</p>
       </div>    
-        
+          
       <button class="btnlog" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
 
-    <div id="id01" class="modal">
-      <div class="imgcontainer">
-        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>     
-      </div>
-      <div class="container">
-        <label for="uname"><b>Login do usuário</b></label>
-        <input type="text" placeholder="Digite seu login" name="uname" id="uname" required>
+      <div id="id01" class="modal">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>     
+        </div>
+        <div class="container">
+          <label for="uname"><b>Login do usuário</b></label>
+          <input type="text" placeholder="Digite seu login" name="uname" id="uname" required>
 
-        <label for="psw"><b>Senha</b></label>
-        <input type="password" placeholder="Digite sua senha" name="psw" id="psw" required>
-        <button class="btnlogconf" onclick="ValidaSenha(uname.value, psw.value)"> Efetuar Login </button>  
-      </div>  
-    </div>
-        
-      
+          <label for="psw"><b>Senha</b></label>
+          <input type="password" placeholder="Digite sua senha" name="psw" id="psw" required>
+
+          <button class="btnlogconf" onclick="ValidaSenha(uname.value, psw.value)"> Efetuar Login </button>  
+        </div>  
+      </div>
+    </main>   
 
     <!-- Rodapé -->
     <footer id="footer">
@@ -105,15 +106,13 @@
         </nav>
       </div>
       <div class="links-container">
-        <h4>Consulta grátis</h4>
+        <h4>Fale com nossos Analistas</h4>
         <div class="phone-number">
           <i class="bi bi-telephone"></i>
           <p>(99) 9999-9999</p>
         </div>
-        <p class="phone-info">
-          Este telefone é especial para tratar de casos já em andamento
-        </p>
       </div>
     </footer>
+    
   </body>
 </html>

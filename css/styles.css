@@ -1,4 +1,39 @@
-/* eu aqui */
+
+:root {
+  --main-color: #d92123;
+  --primary-text-color: #fff;
+  --secondary-text-color: #191919;
+  --secondary-color: #868686;
+  --tertiary-color: #eff3f4;
+  --secondary-bg-color: #5c1011;
+}
+
+* {
+  font-family: "Lato";
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+
+input[type="submit"] {
+  cursor: pointer;
+}
+
+i {
+  background-color: var(--main-color);
+  color: var(--primary-text-color);
+  font-size: 1.5rem;
+  padding: 2rem;
+}
+
 .topnav {
   overflow: hidden;
   background-color:var(--main-color);
@@ -37,10 +72,11 @@
 }
 
 .servico-ofertado{
-  font-size: 45px;
+  font-size: 30px;
   font-weight: 900;
   text-transform: uppercase;
-  text-align: center;
+  display: flex;
+  margin: 0 auto;
 }
 
 .index-conta{
@@ -59,192 +95,237 @@
   margin-top: -30px;
 }
 
-
-
-    /* Full-width input fields */
-    input[type=text],
-    input[type=password] {
-      width: 100%;
-      padding: 12px 20px;
-      margin: 8px 0;
-      display: inline-block;
-      border: 1px solid #ccc;
-      box-sizing: border-box;
-    }
-
-    /* Set a style for all buttons */
-    button {
-      background-color: #04AA6D;
-      color: white;
-      padding: 14px 20px;
-      margin: 8px 0;
-      border: none;
-      cursor: pointer;
-      width: 100%;
-    }
-
-    button:hover {
-      opacity: 0.8;
-    }
-
-    /* Extra styles for the cancel button */
-    .cancelbtn {
-      width: auto;
-      padding: 10px 18px;
-      background-color: #f44336;
-    }
-
-    /* Center the image and position the close button */
-    .imgcontainer {
-      text-align: center;
-      margin: 24px 0 12px 0;
-      position: relative;
-    }
-
-    img.avatar {
-      width: 40%;
-      border-radius: 50%;
-    }
-
-    .container {
-      padding: 16px;
-    }
-
-    span.psw {
-      float: right;
-      padding-top: 16px;
-    }
-
-    /* The Modal (background) */
-    .modal {
-      display: none;
-      /* Hidden by default */
-      position: fixed;
-      /* Stay in place */
-      z-index: 1;
-      /* Sit on top */
-      left: 0;
-      top: 0;
-      width: 100%;
-      /* Full width */
-      height: 100%;
-      /* Full height */
-      overflow: auto;
-      /* Enable scroll if needed */
-      background-color: rgb(0, 0, 0);
-      /* Fallback color */
-      background-color: rgba(0, 0, 0, 0.4);
-      /* Black w/ opacity */
-      padding-top: 60px;
-    }
-
-    /* Modal Content/Box */
-    .modal-content {
-      background-color: #fefefe;
-      margin: 5% auto 15% auto;
-      /* 5% from the top, 15% from the bottom and centered */
-      border: 1px solid #888;
-      width: 80%;
-      /* Could be more or less, depending on screen size */
-    }
-
-    /* The Close Button (x) */
-    .close {
-      position: absolute;
-      right: 25px;
-      top: 0;
-      color: #000;
-      font-size: 35px;
-      font-weight: bold;
-    }
-
-    .close:hover,
-    .close:focus {
-      color: red;
-      cursor: pointer;
-    }
-
-    /* Add Zoom Animation */
-    .animate {
-      -webkit-animation: animatezoom 0.6s;
-      animation: animatezoom 0.6s
-    }
-
-    @-webkit-keyframes animatezoom {
-      from {
-        -webkit-transform: scale(0)
-      }
-
-      to {
-        -webkit-transform: scale(1)
-      }
-    }
-
-    @keyframes animatezoom {
-      from {
-        transform: scale(0)
-      }
-
-      to {
-        transform: scale(1)
-      }
-    }
-
-    /* Change styles for span and cancel button on extra small screens */
-    @media screen and (max-width: 300px) {
-      span.psw {
-        display: block;
-        float: none;
-      }
-
-      .cancelbtn {
-        width: 100%;
-      }
-    }
-
-/* fim eu aqui */
-
-
-/* Geral */
-:root {
-  --main-color: #d92123;
-  --primary-text-color: #fff;
-  --secondary-text-color: #191919;
-  --secondary-color: #868686;
-  --tertiary-color: #eff3f4;
-  --secondary-bg-color: #5c1011;
+.bi-bank, .bi-menu-down{
+  padding: 0;
 }
 
-* {
-  font-family: "Lato";
-  padding: 0;
-  margin: 0;
+
+input[type=text],
+input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
   box-sizing: border-box;
 }
 
-a {
-  text-decoration: none;
-}
 
-img {
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
   width: 100%;
 }
 
-input[type="submit"] {
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.login-inicio{
+  font-size: 1.3rem;
+}
+
+.bi-person{
+  padding: 1rem;
+}
+
+/* CSS janela login  */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  padding-top: 60px;
+}
+
+
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto;
+  border: 1px solid #888;
+  width: 80%;
+}
+
+/* Botao de fechar (X) */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
   cursor: pointer;
 }
 
-i {
-  background-color: var(--main-color);
-  color: var(--primary-text-color);
-  font-size: 1.5rem;
-  padding: 2rem;
+
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
 }
 
-#icon-login{  
-  padding: 0.5rem;
-  font-size: 1.5rem;           
-  background-color: var(--main-color) 
+@-webkit-keyframes animatezoom {
+  from {
+    -webkit-transform: scale(0)
+  }
+
+  to {
+    -webkit-transform: scale(1)
+  }
+}
+
+@keyframes animatezoom {
+  from {
+    transform: scale(0)
+  }
+
+  to {
+    transform: scale(1)
+  }
+}
+
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+.pagboleto{
+  background-color: var(--main-color);
+  height: 6rem;
+  margin: 2px;
+  text-align: center;
+  color: var(--primary-text-color);
+  font-weight: bold;
+  font-size: 1.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}    
+
+.codigo-barra{
+  margin: 2rem;
+  padding: 1rem;
+}
+
+.codigo-barra p {
+  font-size: large;
+  font-weight: bold;
+}
+
+.codigo-barra input [type="text"] {
+  max-width: 10px;
+}
+
+.bi-exclamation-triangle{
+  padding: 6px;
+}
+
+.horapag{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+
+.inputcod{
+  width: 1px;
+}
+
+.btnpagar{
+  margin: 60px;
+}
+
+.container-boleto{
+  margin: 350px;
+}
+
+.p-pag{
+  text-align: center;
+  text-decoration: underline;
+}
+
+.demonstrativo{
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+.extrato-mes{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #333;
+}
+
+.historico {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 50px;
+}
+
+.btnextrato{
+  text-align: center;
+  padding: 0.7rem 1.0rem;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  font-weight: bold;
+  background-color: var(--main-color);
+  color: var(--primary-text-color);
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  margin-top: 10px;
 }
 
 /* Cabeçalho e banner */
@@ -256,29 +337,6 @@ i {
   color: var(--primary-text-color);
   margin-bottom: 2rem;
   position: relative;
-}
-
-#inner-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-#brand {
-  background-color: var(--main-color);
-  padding: 1rem;
-}
-
-#navbar {
-  display: flex;
-  gap: 4rem;
-  text-transform: uppercase;
-  margin-right: 2rem;
-}
-
-#navbar a {
-  color: var(--primary-text-color);
-  font-weight: bold;
 }
 
 .banner.active {
@@ -333,41 +391,10 @@ i {
   background-color: var(--main-color);
 }
 
-/* Áreas de atuação */
 .text-image-section {
   display: flex;
   flex-wrap: wrap;
   gap: 2rem;
-}
-
-.text-container {
-  flex: 2 1 0;
-  display: flex;
-  gap: 2rem;
-  flex-direction: column;
-  justify-content: center;
-  text-align: right;
-}
-
-.section-subtitle {
-  text-transform: uppercase;
-  font-weight: bold;
-  color: var(--main-color);
-}
-
-.section-title {
-  color: var(--secondary-text-color);
-  font-size: 2rem;
-}
-
-.btn {
-  padding: 1.2rem 1.8rem;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: bold;
-  background-color: var(--main-color);
-  color: var(--primary-text-color);
-  align-self: end;
 }
 
 .btnlog {
@@ -396,16 +423,6 @@ i {
   align-items: center;
 
   margin-bottom: 70px;
-}
-
-
-.image-container {
-  flex: 1 1 300px;
-  position: relative;
-}
-
-.image-container i {
-  position: absolute;
 }
 
 #other-services {
@@ -442,222 +459,7 @@ i {
   text-transform: uppercase;
 }
 
-/* Sobre nós */
-#about {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 2rem;
-}
 
-#about-text {
-  background-image: url("../img/pattern.png");
-  background-size: cover;
-  background-position: center;
-  color: var(--primary-text-color);
-  flex: 1 1 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  gap: 2rem;
-  padding: 4rem 3rem;
-}
-
-#about-text .section-subtitle,
-#about-text .section-title {
-  color: var(--primary-text-color);
-}
-
-#about-text i {
-  background-color: transparent;
-}
-
-.about-description {
-  display: flex;
-  align-items: center;
-}
-
-.about-description h4 {
-  font-size: 1.4rem;
-  margin-bottom: 1rem;
-}
-
-#about-data {
-  flex: 1 1 0;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2rem;
-}
-
-#about-data .data {
-  width: 50%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 2rem;
-  margin-top: -1px;
-  margin-left: -1px;
-}
-
-#about-data .data:first-child {
-  border-bottom: 1px solid var(--secondary-text-color);
-  border-right: 1px solid var(--secondary-text-color);
-}
-
-#about-data .data:last-child {
-  border-top: 1px solid var(--secondary-text-color);
-  border-left: 1px solid var(--secondary-text-color);
-}
-
-#about-data .data i {
-  background-color: transparent;
-  color: var(--main-color);
-  font-size: 4rem;
-  padding: 0;
-}
-
-.data .number {
-  font-size: 4rem;
-  font-weight: 900;
-}
-
-.data .text {
-  text-transform: uppercase;
-}
-
-/* Depoimentos */
-#testimonials {
-  display: flex;
-  align-items: center;
-}
-
-#testimonial-information {
-  padding: 3rem;
-}
-
-.autor {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 1rem;
-}
-
-.author .author-name {
-  color: var(--main-color);
-  text-transform: uppercase;
-  font-size: 1.3rem;
-  font-weight: bold;
-  margin-bottom: 1rem;
-}
-
-.author .author-job {
-  color: var(--secondary-text-color);
-}
-
-.author img {
-  width: 100px;
-  height: 100px;
-}
-
-/* Colaboradores */
-#team {
-  position: relative;
-  margin-bottom: 2rem;
-}
-
-#team h2 {
-  font-size: 3rem;
-  text-align: center;
-  max-width: 1000px;
-  margin: 0 auto;
-  position: relative;
-  z-index: 2;
-}
-
-#team h2 span {
-  color: var(--main-color);
-}
-
-#team .square {
-  background-color: var(--tertiary-color);
-  width: 100px;
-  height: 100px;
-  left: 50%;
-  margin-left: -50px;
-  top: -25px;
-}
-
-.employees {
-  display: flex;
-  gap: 2rem;
-  padding: 2rem;
-  text-align: center;
-}
-
-.employee-name {
-  color: var(--main-color);
-  text-transform: uppercase;
-  font-size: 1.2rem;
-  font-weight: bold;
-  margin: 0.5rem 0;
-}
-
-/* Contato */
-#contact {
-  background-color: var(--main-color);
-  gap: 0;
-  padding-bottom: 5rem;
-}
-
-#contact-information {
-  position: relative;
-  text-align: left;
-  padding: 3rem;
-  flex: 1 1 0;
-}
-
-#contact-information .section-subtitle {
-  color: var(--primary-text-color);
-}
-
-#contact-information i {
-  position: absolute;
-  top: 0;
-  left: 0;
-  background-color: var(--primary-text-color);
-  color: var(--main-color);
-}
-
-#contact-information form {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-
-#contact-information .form-control {
-  display: flex;
-  gap: 1rem;
-}
-
-#contact-information input,
-#contact-information textarea {
-  flex: 0.5;
-  padding: 1rem;
-  border: none;
-}
-
-#contact-information .btn {
-  align-self: start;
-  border: 2px solid var(--primary-text-color);
-  font-size: 1.2rem;
-  transition: 0.4s;
-}
-
-#contact-information .btn:hover {
-  background-color: var(--primary-text-color);
-  color: var(--main-color);
-}
 
 /* Rodapé */
 #footer {
@@ -752,176 +554,6 @@ i {
   display: none;
 }
 
-#close-menu {
-  position: absolute;
-  top: 0;
-  right: 0;
-}
 
-#mobile-navbar {
-  position: fixed;
-  top: 0;
-  left: 100%;
-  height: 100%;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.95);
-  display: flex;
-  flex-direction: column;
-  padding: 4rem 2rem;
-  transition: 0.4s;
-  z-index: 5;
-}
 
-#mobile-navbar.menu-active {
-  left: 0;
-}
 
-#mobile-navbar a {
-  color: var(--primary-text-color);
-  font-size: 2rem;
-  text-align: center;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid var(--main-color);
-}
-
-/* Responsivo */
-@media (max-width: 450px) {
-  /* Geral */
-  body {
-    overflow-x: hidden;
-  }
-
-  i {
-    padding: 1.5rem;
-    font-size: 2rem;
-  }
-
-  /* navbar */
-  #navbar {
-    display: none;
-  }
-
-  #menu,
-  #close-menu {
-    display: block;
-  }
-
-  .banner {
-    max-width: 100%;
-    padding: 4rem 2rem;
-  }
-
-  .banner h2 {
-    font-size: 3rem;
-  }
-
-  .banner p {
-    font-size: 1rem;
-  }
-
-  /* Áreas de atuação */
-  .btn {
-    align-self: initial;
-  }
-
-  .image-container {
-    flex: 1 1 100%;
-  }
-
-  #other-services {
-    flex-wrap: wrap;
-  }
-
-  /* Sobre nós */
-  #about {
-    gap: 0;
-  }
-
-  #about-text,
-  #about-data {
-    flex: 1 1 100%;
-  }
-
-  .about-description {
-    gap: 1rem;
-  }
-
-  .about-description i {
-    padding: 0;
-    min-width: 40px;
-  }
-
-  #about #about-data .data {
-    width: 100%;
-    border: none;
-    border-bottom: 1px solid var(--secondary-text-color);
-  }
-
-  /* Depoimentos */
-  .text-container {
-    text-align: center;
-    padding: 2rem;
-  }
-
-  /* Colaboradores */
-  #team {
-    margin-top: 2rem;
-  }
-
-  #team h2 {
-    font-size: 2.5rem;
-  }
-
-  .employees {
-    flex-wrap: wrap;
-  }
-
-  /* Contato */
-  #contact {
-    padding-bottom: 0;
-  }
-
-  #contact-information {
-    padding: 7rem 1rem;
-  }
-
-  #contact-information .form-control {
-    flex-direction: column;
-  }
-
-  #contact-information .btn {
-    align-self: auto;
-  }
-
-  /* Rodapé */
-  #footer {
-    flex-wrap: wrap;
-  }
-
-  #footer i {
-    font-size: 2rem;
-    padding: 1rem;
-  }
-
-  .footer-brand {
-    text-align: center;
-  }
-
-  .networks {
-    margin-bottom: 3rem;
-  }
-
-  .links-container {
-    margin-bottom: 1rem;
-  }
-
-  .links-container h4 {
-    margin-bottom: 1.5rem;
-  }
-
-  .contact-info,
-  .links-container {
-    width: 100%;
-  }
-}

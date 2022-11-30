@@ -24,15 +24,16 @@
     <script src="js/scripts.js" defer></script>
   </head>
   <body>
+
     <!-- Cabeçalho e Banner -->
     <div class="mobile-container">
       <div class="topnav">
         <a href="index.html" class="active"><span><i class="bi bi-bank"></i></span> TXR Banco Digital</a>
         <div id="myLinks">
+          <a href="index.html">Página Inicial</a>
           <a href="login.html">Login</a>
           <a href="boleto.html">Pagar Boleto</a>
           <a href="extrato.html">Extrato</a>
-          <a href="emprestimo.html">Empréstimo</a>
         </div>
         <a href="javascript:void(0);" class="icon" onclick="hamburguer()">
           <i class="bi bi-menu-down"></i>
@@ -40,135 +41,36 @@
       </div>
     </div>
 
-    <!-- Cabeçalho e Banner -->
-    <header id="header">
-      <div id="inner-header">
-        
-        </nav>
-        <!-- Menu Mobile -->
-        <i class="bi bi-list" id="menu"></i>
-        <nav id="mobile-navbar">
-          <i class="bi bi-x-lg" id="close-menu"></i>
-          
-        </nav>
+    <main>
+      <p class="pagboleto">Empréstimo de valores</p>
+      <div class="codigo-barra">
+        <p class="p-pag">Empréstimo de forma simplificada e dinheiro liberado na hora</p><br>
+        <p>Informe o melhor dia do mês para o vencimento das prestações</p>
+          <input type="text" maxlength="02" class="input-pag"><br>
+          <p>Informe o valor desejado para empréstimo (juros de 3,25% ao mês)</p>
+          <input type="text" maxlength="10" class="input-pag"><br>
+          <p>Informe o número de parcelas</p>
+          <input type="select" maxlength="03" class="input-pag">
       </div>
-      <div class="banner active">
-        <span class="square"></span>
-        <h2>Sem mais burocrácia</h2>
-        <p>
-          Chega de enfrentar filas e passar horas em uma agência, resolvemos tudo de forma on-line e pratica.
-        </p>
-      </div>
-      <div class="banner">
-        <span class="square"></span>
-        <h2>Conheça os nossos serviços</h2>
-        <p>
-          Pagamento de contas on-line, empréstimos, finaciamento de veículos e muito mais. 
-        </p>
-      </div>
-      <div class="banner">
-        <span class="square"></span>
-        <h2>Oferta de crédito para todas as situações</h2>
-        <p>
-          As melhores taxas de crédito do mercado.
-        </p>
-      </div>
-      <div class="dots">
-        <div class="dot active"></div>
-        <div class="dot"></div>
-        <div class="dot"></div>
-      </div>
-    </header>
-    <!-- Áreas de atuação -->
-    <main id="expertise-areas" class="text-image-section">
-     <p class="servico-ofertado">Alguns do serviços mais solicitados pelos nossos clientes</p>
-      <div id="other-services">
-        <div class="service">
-          <img src="img/financas.jpg" alt="Banco" />
-          <i class="bi bi-bank"></i>
-          <div class="service-info">
-            <h4>Finanças pessoais</h4>
-            <p>
-              Oferecemos crédito para pessoa física, aposentados e/ou pensionistas do INSS 
-              com as melhores taxas do mercado, nos consulte para saber mais.
-            </p>
-          </div>
-        </div>
-        <div class="service">
-          <img src="img/contru.png" alt="Construção" />
-          <i class="bi bi-bricks"></i>
-          <div class="service-info">
-            <h4>Construção de Imóveis</h4>
-            <p>
-              Você construtor, precisa de uma ajuda para desenvolver seu projeto? Conte com a gente, 
-              oferecemos crédito com preço especial para empresas da construção civil.
-            </p>
-          </div>
-        </div>
-        <div class="service">
-          <img src="img/veiculo.jpg" alt="Empresa" />
-          <i class="bi bi-car-front"></i>
-          <div class="service-info">
-            <h4>Financiamento de veículos</h4>
-            <p>
-              Quer trocar de carro ou renovar sua frota? 
-              Consulte nossas taxas para financiamento de veículos.
-            </p>
-          </div>
-        </div>
-      </div>
-    </main>
-   
-   
+    
+    </main>  
+     <div class="btnpagar">
+      <button class="btnlog" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Continuar para empréstimo</button>
 
-    <!-- Rodapé -->
-    <footer id="footer">
-      <div class="contact-info">
-        <div class="footer-brand">
-          <h2>TXR Banco Digital</h2>
-          <p>Solução em finanças</p>
+      <div id="id01" class="modal">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>     
         </div>
-        <p><i class="bi bi-geo-alt"></i> Rua dos Alfeneiros, nº04</p>
-        <p><i class="bi bi-telephone"></i> (99) 9999-9999</p>
-        <p><i class="bi bi-envelope"></i> contato@txr.com</p>
-        <div class="social-networks">
-          <p>Siga-nos:</p>
-          <div class="networks">
-            <a href="#"><i class="bi bi-facebook"></i></a>
-            <a href="#"><i class="bi bi-twitter"></i></a>
-            <a href="#"><i class="bi bi-linkedin"></i></a>
-            <a href="#"><i class="bi bi-instagram"></i></a>
-          </div>
-        </div>
+        <div class="container-boleto">
+          <label for="uname"><b>Login do usuário</b></label>
+          <input type="text" placeholder="Digite seu login" name="uname" id="uname" required>
+
+          <label for="psw"><b>Senha</b></label>
+          <input type="password" placeholder="Digite sua senha" name="psw" id="psw" required>
+          <button class="btnlogconf" onclick="ValidaSenha(uname.value, psw.value)">Realizar Empréstimo</button>  
+        </div>  
       </div>
-      <div class="links-container">
-        <h4>Outros serviços</h4>
-        <nav>
-          <a href="#">Empréstimo para Agronegócio</a>
-          <a href="#">Empréstimo para Industria</a>
-          <a href="#">LGPD</a>
-          <a href="#">Financiamento estudantil</a>
-        </nav>
-      </div>
-      <div class="links-container">
-        <h4>Páginas</h4>
-        <nav>
-          <a href="#">Termos e condições</a>
-          <a href="#">Política de privacidade</a>
-          <a href="#">Fale com um analista</a>
-          <a href="#">FAQ</a>
-        </nav>
-      </div>
-      <div class="links-container">
-        <h4>Consulta grátis</h4>
-        <div class="phone-number">
-          <i class="bi bi-telephone"></i>
-          <p>(99) 9999-9999</p>
-        </div>
-        <p class="phone-info">
-          Este telefone é especial para tratar de casos já em andamento
-        </p>
-      </div>
-    </footer>
+     </div>
+     
   </body>
 </html>
